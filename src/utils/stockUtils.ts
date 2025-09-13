@@ -9,11 +9,11 @@ export const getStockStatus = (item: InventoryItem): StockStatus => {
 export const getStockStatusColor = (status: StockStatus): string => {
   switch (status) {
     case 'in-stock':
-      return 'text-green-600 bg-green-50 border-green-200';
+      return '#10B981';
     case 'low-stock':
-      return 'text-orange-600 bg-orange-50 border-orange-200';
+      return '#F59E0B';
     case 'out-of-stock':
-      return 'text-red-600 bg-red-50 border-red-200';
+      return '#EF4444';
   }
 };
 
